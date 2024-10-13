@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>لوحة التحكم - موقع الطلاب</title>
+  <link rel="stylesheet" href="lec.css">
+  <link rel="stylesheet" href="night.css">
+  <style>
+   
+  </style>
+</head>
+
+<a href="files/Ali Hider/ملخصات/د. أكرم ملخص المحاضرة الأولى.pdf"></a>
+<a href="files/Ali Hider/ملخصات/ملخص المحاضرة الثاني د. أكرم.pdf"></a>
+<a href="files/Ali Hider/ملخصات/ملخص المحاضرة الثالث د.أكرم.pdf"></a>
+<a href="files/Ali Hider/ملخصات/ملخص المحاضرة الرابع & الخامس د.أكرم الحادي.pdf"></a>
+<a href="files/Ali Hider/ملخصات/ملخص المحاضرة السادس.pdf"></a>
+<a href="files/Ali Hider/ملخصات/ملخص المحاضرة السابعة.pdf"></a>
+<body>
+
+<a href=""></a>
+  <header>
+    <div class="right">
+      <div class="logo-container">
+        <img src="icon/3d-user-profile-icon-png.webp" alt="شعار" />
+        <p class="sname">اسم الطالب</p>
+      </div>
+    </div>
+
+    <div class="center">
+      <div class="nav-links">
+        <a href="index.html">الرئيسية</a>
+        <div class="down">
+          <a href="#">الغرفة الدراسية</a>
+          <div class="dropdown">
+            <a href="#">نظري</a>
+            <a href="#">عملي</a>
+          </div>
+        </div>
+        <a href="#contact">تواصل معنا</a>
+      </div>
+    </div>
+    <div class="left">
+      <button class="toggle-button" onclick="toggleSidebar()"><img src="icon/3405846.png" alt=""></button>
+    </div>
+  </header>
+
+  <nav class="sidebar">
+    <button class="close-button" onclick="toggleSidebar()">❌</button>
+    <h3>القائمة</h3>
+    <a href="#">
+      <img class="siticon" src="icon/mode1.png" alt="">
+      <button class="night" onclick="toggleNightMode()">الوضع الليلي</button>
+    </a>
+    <a href="#contact"><img class="siticon" src="icon/communicate.png" alt="">تواصل معنا</a>
+    <a href="#"><img class="siticon" src="icon/logout.png" alt="">تسجيل خروج</a>
+    <a href="#"><img class="siticon" src="icon/aboutus.png" alt="">عنا</a>
+  </nav>
+
+  <main>
+    <aside class="aside-nav">
+      <!-- Add your navigation links here -->
+      <button class="lectures" >محاضرات</button>
+      <button class="sammary"> ملخصات</button>
+      <button class="demand"> تكاليف</button>
+      <button class="course"> كورسات</button>
+      <button class="refrence"> مراجع</button>
+    </aside>
+
+    <div class="content" style="direction: rtl;">
+     
+   
+           
+    
+     
+     
+     
+    
+     
+        
+        
+      
+    </div>
+  </main>
+
+  <footer class="foot">
+    <div class="contact">
+      <p>إذا كان لديك أي استفسارات أو اقتراحات، لا تتردد في التواصل معنا عبر الواتساب:</p>
+      <p class="contact-text">تواصل عبر الواتساب</p>
+      <button class="whatsApp-button">
+        <img id="contact" class="WhatsApp-logo" src="../icons/تنزيل.jpeg" alt="WhatsApp Logo"
+          onclick="contactWhatsApp()">
+      </button>
+    </div>
+  </footer>
+
+  <script src="js/downlaodFiles.js" > 
+  </script>
+  <script src="js/sitting.js"></script>
+
+</body>
+
+</html>

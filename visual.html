@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>لوحة التحكم - موقع الطلاب</title>
+  <link rel="stylesheet" href="it.css">
+  <link rel="stylesheet" href="night.css">
+
+</head>
+
+<body>
+
+  <header>
+    <div class="right">
+      <div class="logo-container">
+        <img src="icon/3d-user-profile-icon-png.webp" alt="شعار" />
+        <p class="sname">اسم الطالب</p>
+      </div>
+    </div>
+
+    <div class="center">
+      <div class="nav-links">
+        <a href="index.html">الرئيسية</a>
+        <div class="down">
+          <a href="#">الغرفة الدراسية</a>
+          <div class="dropdown">
+            <a href="#">نظري</a>
+            <a href="#">عملي</a>
+          </div>
+        </div>
+        <a href="#contact">تواصل معنا</a>
+      </div>
+    </div>
+    <div class="left">
+      <button class="toggle-button" onclick="toggleSidebar()"><img src="icon/3405846.png" alt=""></button>
+    </div>
+  </header>
+
+  <nav class="sidebar">
+    <button class="close-button" onclick="toggleSidebar()">❌</button>
+    <h3>القائمة</h3>
+    <a href="#">
+      <img class="siticon" src="icon/mode1.png" alt="">
+      <button class="night" onclick="toggleNightMode()">الوضع الليلي</button>
+    </a>
+    <a href="#contact"><img class="siticon" src="icon/communicate.png" alt="">تواصل معنا</a>
+    <a href="#"><img class="siticon" src="icon/logout.png" alt="">تسجيل خروج</a>
+    <a href="#"><img class="siticon" src="icon/aboutus.png" alt="">عنا</a>
+  </nav>
+
+
+  <main>
+  
+    <div class="subject-container">
+      <div class="card"><a href="lectures.html"> مبادئ نظم التشغيل </a> </div>
+      <div class="card"> <a href=""> موائمة الانسان مع الحاسوب</a></div>
+      <div class="card"><a href="">  تراسل بيانات والشبكات </a></div>
+      <div class="card"><a href="">  تطوير تطبيقات الويب </a></div>
+      <div class="card"><a href="">  ادارة المشاريع </a></div>
+  
+    </div>
+  </main>
+  <footer class="foot">
+  
+    <div class="contact">
+      <p>إذا كان لديك أي استفسارات أو اقتراحات، لا تتردد في التواصل معنا عبر الواتساب:</p>
+      <p class="contact-text">تواصل عبر الواتساب</p>
+  
+      <button class="whatsApp-button">
+        <img id="contact" class="WhatsApp-logo" src="../icons/تنزيل.jpeg" alt="WhatsApp Logo" onclick="contactWhatsApp()">
+      </button>
+    </div>
+  </footer>
+  
+  
+  
+  <script>
+
+    function contactWhatsApp() {
+      const phoneNumber = '+967738281401';
+      const message = 'Hello, I would like to get in touch!';
+      const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+      window.open(whatsappUrl, '_blank');
+    }
+  </script>
+  
+  <script>
+    function toggleSidebar() {
+      const sidebar = document.querySelector('.sidebar');
+      sidebar.classList.toggle('show');
+
+
+
+    }
+
+    function toggleNightMode() {
+      const body = document.body;
+      body.classList.toggle('night-mode');
+    }
+  </script>
+  
+  </body>
+  
+  </html>
+  <style>
+  
+  
+  </style>                  

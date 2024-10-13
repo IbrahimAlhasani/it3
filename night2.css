@@ -1,0 +1,30 @@
+/* تنسيقات الوضع الليلي */
+.night-mode, h3 {
+  background-color: #121212;
+  /* لون الخلفية الداكن */
+  color: #ffffff;
+  /* لون النص */
+}
+
+.night-mode header,
+.night-mode footer,
+.night-mode .sidebar {
+  background-color: #1e1e1e;
+  /* لون الخلفية للأجزاء الأخرى */
+}
+
+.night-mode .nav-links a,
+.night-mode .sidebar a {
+  color: #ffffff;
+  /* تغيير لون الروابط */
+}
+
+.night-mode .tile {
+  background-color: #2c2c2c;
+  /* لون الخلفية لعناصر الشبكة */
+}
+
+.night-mode .whatsApp-button {
+  background-color: #25d366;
+  /* لون زر WhatsApp */
+}

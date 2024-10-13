@@ -1,0 +1,136 @@
+.night-mode,
+h3 {
+  background-color: #121212;
+ 
+  color: #ffffff;
+ 
+}
+
+.night-mode header,
+.night-mode footer,
+.night-mode .sidebar {
+  border-bottom: 2px solid white;
+  box-shadow: 0 2px 4px rgba(240, 237, 237, 0.993);
+  background-color: #3f3241;
+  
+}
+
+.night-mode .nav-links a,
+.night-mode .sidebar a {
+  color: #ffffff;
+}
+
+.night-mode .tile {
+  background-color: #2c2c2c;
+  
+}
+
+.night-mode .whatsApp-button {
+  background-color: #25d366;
+  
+}
+
+.night-mode .card {
+  background-color: #121212;
+  box-shadow: 0 2px 5px rgb(223, 214, 214);
+}
+
+.night-mode .welcome-message {
+  color: white;
+}
+
+.night-mode .card a {
+  color: white;
+
+}
+
+.night-mode .dropdown a {
+  color: black;
+}
+
+.night-mode .hero-section h1,
+.night-mode .hero-section p {
+
+  color: white;
+}
+
+.night-mode section {
+  background-color: #121212;
+  box-shadow: 0 2px 5px rgb(223, 214, 214);
+}
+.night-mode .content{
+  background-color: #1e1e1e;
+  color: white;
+}
+
+.night-mode aside button{
+ 
+  background-color: #4d4f55;
+  color: white;
+}
+
+
+.night-mode .sidebar {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+}
+
+.night-mode .sidebar a {
+  color: #ffffff;
+}
+
+
+.night-mode .aside-nav {
+  border-right: 2px solid white;
+  background-color: #1e1e1e;
+}
+
+.night-mode .aside-nav button {
+  background-color: #4b1b40;
+  color: #ffffff;
+}
+
+.night-mode .aside-nav button:hover {
+  background-color: #8f139bb4;
+}
+
+.night-mode .content {
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  background-color: #1e1e1e;
+  color: #ffffff;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+.night-mode .subject-title {
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.2);
+  border-bottom: 2px solid #007bff;
+  background: linear-gradient(to right, #007bff, #00bfff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.night-mode .file-item {
+  background-color: #2c2c2c;
+  border-bottom: 1px solid #444;
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+}
+
+.night-mode .file-item p {
+  color: #ffffff;
+}
+
+.night-mode .file-item a button {
+  background-color: #4b1b40;
+  color: #ffffff;
+}
+
+.night-mode .file-item a button:hover {
+  background-color: rgb(9, 158, 66);
+}
+
+
+
+/* نهاية الكوج الليلي */

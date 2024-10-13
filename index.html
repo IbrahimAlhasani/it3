@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>لوحة التحكم - موقع الطلاب</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="night2.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="right">
+    <div class="logo-container">
+      <img src="icon/3d-user-profile-icon-png.webp" alt="شعار" />
+      <p class="sname">اسم الطالب</p>
+    </div>
+  </div>
+
+  <div class="center">
+    <div class="nav-links">
+      <a href="index.html">الرئيسية</a>
+      <a href="#">الأخبار</a>
+      <a href="#">تواصل معنا</a>
+    </div>
+    </div>
+    <div class="left">
+    <button class="toggle-button" onclick="toggleSidebar()"><img src="icon/3405846.png" alt=""></button>
+    </div>
+  </header>
+
+  <nav class="sidebar">
+    <button class="close-button" onclick="toggleSidebar()">❌</button>
+    <h3>القائمة</h3>
+    <a href="#"> 
+    <img class="siticon" src="icon/mode1.png" alt="">
+    <button class="night" onclick="toggleNightMode()">الوضع الليلي</button>
+</a>
+    <a href="#contact"><img class="siticon" src="icon/communicate.png" alt="">تواصل معنا</a>
+    <a href="#"><img class="siticon" src="icon/logout.png" alt="">تسجيل خروج</a>
+    <a href="#"><img class="siticon" src="icon/aboutus.png" alt="">عنا</a>
+  </nav>
+
+  <main>
+    <div id="main">
+      <div class="inner">
+       
+        <section class="tiles">
+          <article class="style1">
+            <span class="image">
+              <img src="images/pic07.jpg" alt="" />
+            </span>
+            <a href="index1.html">
+              <h2>تقنية معلومات</h2>
+              <div class="content">
+                <p>Information Technology</p>
+              </div>
+            </a>
+          </article>
+          <article class="style2">
+            <span class="image">
+              <img src="images/pic08.jpg" alt="" />
+            </span>
+            <a href="html.html">
+              <h2>أمن سيبراني</h2>
+              <div class="content">
+                <p>Cyber Security</p>
+              </div>
+            </a>
+          </article>
+          <article class="style3">
+            <span class="image">
+              <img src="images/pic03.jpg" alt="" />
+            </span>
+            <a href="html.html">
+              <h2>نظم معلومات</h2>
+              <div class="content">
+                <p>Information System</p>
+              </div>
+            </a>
+          </article>
+          <article class="style4">
+            <span class="image">
+              <img src="images/pic04.jpg" alt="" />
+            </span>
+            <a href="html.html">
+              <h2>محاسبة</h2>
+              <div class="content">
+                <p>Accounting</p>
+              </div>
+            </a>
+          </article>
+          <article class="style5">
+            <span class="image">
+              <img src="images/pic05.jpg" alt="" />
+            </span>
+            <a href="html.html">
+              <h2>طب أسنان</h2>
+              <div class="content">
+                <p>Dental Science</p>
+              </div>
+            </a>
+          </article>
+          <article class="style6">
+            <span class="image">
+              <img src="images/pic06.jpg" alt="" />
+            </span>
+            <a href="generic.html">
+              <h2>ترجمة</h2>
+              <div class="content">
+                <p>Translation</p>
+              </div>
+            </a>
+          </article>
+  </main>
+
+  <footer>
+   
+  
+  
+    <div class="contact">
+      <p class="contact-text"> Contact With me througth WhatssApp</p>
+      <button class="whatsApp-button">
+        <img id="contact" class="WhatsApp-logo" src="icon/تنزيل.jpeg" alt="WhatsApp Logo" onclick="contactWhatsApp()">
+  
+      </button>
+  
+  
+    </div>
+  
+  </footer>
+  
+
+  
+  <script>
+
+    function contactWhatsApp() {
+      const phoneNumber = '+967738281401';
+      const message = 'Hello, I would like to get in touch!';
+      const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+      window.open(whatsappUrl, '_blank');
+    }
+  </script>
+
+  <script>
+    function toggleSidebar() {
+      const sidebar = document.querySelector('.sidebar');
+      sidebar.classList.toggle('show');
+
+      
+      
+    }
+
+    function toggleNightMode() {
+        const body = document.body;
+        body.classList.toggle('night-mode');
+      }
+  </script>
+
+</body>
+
+</html>

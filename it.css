@@ -1,0 +1,455 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+
+}
+
+header {
+  background-color: #3f3241;
+  color: white;
+  padding: 10px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  
+  right: 0;
+
+}
+
+.logo-container img {
+  width: 40px;
+
+  height: auto;
+  margin-left: 10px;
+  margin-right: 5px;
+}
+
+
+.nav-links {
+  display: flex;
+  gap: 15px;
+  margin: 10px auto;
+  margin-left: auto;
+
+  
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 50px;
+  font-size: 20px;
+
+}
+
+.night {
+  border: none;
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+a:hover,
+.night:hover {
+
+  border-bottom-color: transparent;
+  color: #f2849e !important;
+}
+
+.sidebar {
+  text-wrap: wrap;
+  display: none;
+  width: 200px;
+       background-color: #f4f4f4;
+      padding: 15px;
+  height: auto;
+    position: fixed;
+  border-radius: 15px;
+  margin-top: 10px;
+  right: 0;
+  top: 0;
+  z-index: 100;
+  transition: all 1.3s;
+  text-align: center;
+  font-size: 18px;
+  color: black;
+  font-family: cursive;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+
+.siticon {
+  width: 35px;
+  border: none;
+  border-radius: 17px;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  margin-right: 12px;
+  position: absolute;
+  left: 0;
+  z-index: 100;
+
+}
+
+.sidebar a:hover {
+
+  font-weight: bold;
+
+  color: #3072be;
+
+}
+
+.sidebar h3:hover {
+  background-color: rgb(228, 82, 138);
+  color: white;
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.sidebar.show {
+  display: block;
+}
+
+.toggle-button img {
+  width: 45px;
+  border-radius: 22px;
+
+}
+
+.toggle-button {
+  border: none;
+  border-radius: 100px;
+  margin-right: 15px;
+  cursor: pointer;
+
+
+}
+
+.toggle-button:hover {
+  border: 2px solid rgb(228, 82, 138);
+
+}
+
+.close-button {
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+  
+  color: white;
+  border: none;
+  margin-left: 5px;
+  border-radius: 50px;
+
+
+}
+
+.close-button:hover {
+  background-color: red;
+}
+
+
+nav a {
+  display: block;
+  padding: 10px;
+  color: #333;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-bottom: 5px;
+}
+
+
+.welcome-message {
+  margin-top: 50px;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 150px;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: 1fr ;
+  gap: 15px;
+  width: 70%;
+  max-width: 800px;
+}
+/*عرض مواد حسب عرض الشاشة */
+.subject-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr ;
+  gap: 15px;
+  width: 100%;
+  /* max-width: 800px; */
+}
+
+.card {
+  background-color: #fff;
+ 
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s;
+  font-size: 20px;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+    footer {
+      text-align: center;
+      padding: 10px;
+     /* margin-top: 15px 10px 0 20px; */
+      color: white;
+      position: relative;
+      border-radius: 15px;
+      
+      background-color: rgb(109, 37, 177);
+    }
+    .foot{
+      margin-top: 150px;
+    }
+
+
+.WhatsApp-logo {
+  width: 2em;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  /* margin: 5px; */
+}
+
+.whatsApp-button {
+  margin-bottom: 5px;
+  /* margin-left: 30%; */
+  border-radius: 10px;
+  width: 70px;
+  border: none;
+
+}
+
+.whatsApp-button:hover {
+  background-color: #d52349;
+}
+
+
+
+@media (max-width: 600px) {
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+.welcome-message {
+  font-size: 20px;
+}
+  main {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .sidebar {
+    width: 25%;
+    height: auto;
+  }
+
+  .sidebar.show {
+    display: block;
+    position: absolute;
+  }
+    .subject-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr ;
+    
+      /* max-width: 800px; */
+    }
+}
+
+@media (max-width: 500px) {
+.subject-container {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    /* max-width: 800px; */
+  }
+
+}
+
+
+/* dropdown */
+.nav-links {
+  text-wrap: nowrap;
+}
+.down {
+  position: relative;
+  cursor: pointer;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  right: 0;
+ 
+  border-radius: 5px;
+}
+
+.down:hover .dropdown {
+  display: block;
+}
+    .dropdown a {
+      display: block;
+      padding: 5px;
+      color: black;
+      text-decoration: none;
+    }
+        .dropdown a:hover {
+          background-color: #f0f0f0;
+        }
+
+
+        /* main */
+
+                
+        
+   /* تهية الكود الهام */
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+  
+    main {
+      padding: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+      direction: rtl;
+    }
+  
+    section {
+      background-color: #fff;
+      margin: 20px;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+  
+    h1,
+    h2 {
+      color: #007BFF;
+    }
+  
+    p {
+      font-size: 18px;
+    }
+  
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+  
+    ul li {
+      margin-bottom: 10px;
+    }
+  
+    ul li a {
+      text-decoration: none;
+      color: #007BFF;
+      font-weight: bold;
+    }
+  
+    ul li a:hover {
+      text-decoration: underline;
+    }
+  
+    .whatsApp-button {
+      /* background-color: #25D366; */
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+    }
+  
+    .whatsApp-button img {
+      width: 24px;
+      height: 24px;
+      margin-right: 10px;
+    }
+  
+    /*شاشة الحوال */
+    @media (max-width: 768px) {
+      main {
+        padding: 10px;
+      }
+  
+      section {
+        padding: 15px;
+        margin: 20px 10px 20px 10px;
+        text-wrap: wrap;
+      }
+  
+      h1 {
+        font-size: 15 px;
+      }
+      
+      h2 {
+        font-size: 20px;
+        font-weight: bold;
+      }
+      
+      p {
+        font-size: 16px;
+        font-weight: bold;
+      }
+      section ul li {
+        font-size: 20px;
+      }
+  
+      /* .whatsApp-button {
+        padding: 8px 16px;
+      }
+  
+      .whatsApp-button img {
+        width: 20px;
+        height: 20px;
+      } */
+    }
+
+
+
+
+       
